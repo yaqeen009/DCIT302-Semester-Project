@@ -3,12 +3,15 @@ import Games from "./pages/games"
 import Home from "./pages/home"
 import Rewards from "./pages/rewards"
 import SignIn from "./pages/signIn"
+import Footer from "./components/footer"
 import { Routes, Route, useLocation } from "react-router-dom"
 
 
 function App() {
   const location = useLocation()
   const showHeader = location.pathname !== "/"
+  const showFooter = location.pathname !== "/"
+  
 
     return (
     <div>
@@ -21,6 +24,7 @@ function App() {
           <Route path="/rewards" element={<Rewards/>}/>
         </Routes>
       </div>
+      {showFooter && <Footer/>}
     </div>
   )
 }

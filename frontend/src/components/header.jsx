@@ -8,8 +8,8 @@ import grass from "../assets/Grass.svg";
 
 const Header = () => {
   return (
-    <div className="header font-comic text-label top-0 mb-12">
-      <div className="bg-primary-100 w-full h-[10vh] flex flex-row px-4 items-center justify-between relative z-20">
+    <div className="header font-comic text-label top-0 mb-[64px] sticky z-30">
+      <div className="bg-primary-100 w-full h-fit flex flex-row px-4 pb-5 items-center justify-between relative z-20">
         <div className="">
           <img src={logo} />
         </div>
@@ -22,7 +22,7 @@ const Header = () => {
           <img src={settings} className="h-6 w-6" />
         </div>
       </div>
-      <div className="absolute mt-8 top-3 left-0 w-full z-0">
+      <div className="absolute mt-8 top-10 left-0 w-full z-10">
         <img src={grass} className="w-full "/>
       </div>
     </div>
