@@ -3,13 +3,14 @@ import NavComponent from "../components/navComp";
 import play from "../assets/play2.svg";
 import Game from "../components/game";
 import Card from "../components/card";
+import beach from "../assets/beach.png";
 
 const Home = () => {
   return (
     <div>
       <div className="home font-comic mx-10 z-0">
         <div className="flex flex-row items-center justify-between">
-          <div className="flex flex-row">
+          <div className="flex flex-row items-center">
             <h1 className="text-primary-300 text-headline">
               Welcome back, <span className="text-primary-400">Julie</span>
             </h1>
@@ -39,7 +40,8 @@ const Home = () => {
               />
             </div>
             <Card
-              bgColor={"[#46D7FA]"}
+              coverImg={beach}
+              bgColor={"bg-[#46D7FA]"}
               img={play}
               secondaryColor={"text-[#F4538A] border-[#F4538A]"}
               tertiaryColor={"hover:bg-[#F1D9DB]"}

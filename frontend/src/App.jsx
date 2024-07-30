@@ -14,7 +14,7 @@ function App() {
   
 
     return (
-    <div>
+    <div className="bg-secondary-200">
       {showHeader && <Header/>}
       <div>
         <Routes>
