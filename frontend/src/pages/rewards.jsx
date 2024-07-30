@@ -2,7 +2,7 @@ import Button from "../components/button";
 
 const Rewards = () => {
   return (
-      <div className="home font-comic mx-10 z-0">
+      <div className="home font-comic my-10 mx-10 z-0">
         <h1 className="text-primary-300 text-headline">All Games</h1>
         <div className="flex flex-col">
             <section className="achievement-box mb-8">

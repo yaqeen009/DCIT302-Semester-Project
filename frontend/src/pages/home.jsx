@@ -8,7 +8,7 @@ import beach from "../assets/beach.png";
 const Home = () => {
   return (
     <div>
-      <div className="home font-comic mx-10 z-0">
+      <div className="home font-comic my-10 mx-10 z-0">
         <div className="flex flex-row items-center justify-between">
           <div className="flex flex-row items-center">
             <h1 className="text-primary-300 text-headline">

@@ -4,6 +4,7 @@ import Home from "./pages/home"
 import Rewards from "./pages/rewards"
 import SignIn from "./pages/signIn"
 import Footer from "./components/footer"
+import Settings from './pages/settings'; // Import the Settings component
 import { Routes, Route, useLocation } from "react-router-dom"
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/home" element={<Home/>}/>
           <Route path="/games" element={<Games/>}/>
           <Route path="/rewards" element={<Rewards/>}/>
+          <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
       {showFooter && <Footer/>}

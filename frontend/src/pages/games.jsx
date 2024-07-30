@@ -8,7 +8,7 @@ import sunset from "../assets/sunset.png"
 const Games = () => {
   return (
     <div>
-      <div className="home font-comic mx-10 z-0">
+      <div className="home font-comic my-10 mx-10 z-0">
         <h1 className="text-primary-300 text-headline">All Games</h1>
         <div className="games flex flex-col">
           <div className="flex flex-row justify-between">
