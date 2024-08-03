@@ -11,7 +11,6 @@ import { Routes, Route, useLocation } from "react-router-dom"
 function App() {
   const location = useLocation()
   const showHeader = location.pathname !== "/"
-  const showFooter = location.pathname !== "/"
   
 
     return (
@@ -26,7 +25,6 @@ function App() {
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
-      {showFooter && <Footer/>}
     </div>
   )
 }
