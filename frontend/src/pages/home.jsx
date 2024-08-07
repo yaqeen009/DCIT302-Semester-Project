@@ -9,8 +9,8 @@ import grass from "../assets/Grass.svg";
 
 const Home = () => {
   return (
-    <div>
-      <div className="absolute mt-8 top-10 left-0 w-full z-10">
+    <div className="relative">
+      <div className="absolute -top-20 left-0 w-full z-10">
         <img src={grass} alt="Grass" className="w-full" />
       </div>
       <div className="home font-comic mt-10 mx-10 z-0">
