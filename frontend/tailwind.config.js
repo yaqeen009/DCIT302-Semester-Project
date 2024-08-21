@@ -46,7 +46,17 @@ module.exports = {
         'headline': '32px',
         'title':'22px',
         'body':'20px',
-        'label':'16px'
+        'label':'16px',
+        'tablet-display':'45px',
+        'tablet-headline':'28px',
+        'tablet-title':'16px',
+        'tablet-body':'14px',
+        'tablet-label':'12px',
+        'mobile-display':'36px',
+        'mobile-headline':'24px',
+        'mobile-title':'14px',
+        'mobile-body':'12px',
+        'mobile-label':'11px',
       }
     },
   },
