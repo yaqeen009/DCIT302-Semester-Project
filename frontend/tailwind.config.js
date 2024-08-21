@@ -57,6 +57,12 @@ module.exports = {
         'mobile-title':'14px',
         'mobile-body':'12px',
         'mobile-label':'11px',
+      },
+      boxShadow:{
+        '1dp':'0px 0px 2px 0px rgba(0, 0, 0, 0.14), 0px 2px2px 0px rgba(0, 0, 0, 0.12), 0px 1px 3px 0px rgba(0, 0, 0, 0.20)',
+        '2dp':'0px 3px 3px 0px rgba(0, 0, 0, 0.14), 0px 3px 4px 0px rgba(0, 0, 0, 0.12), 0px 1px 8px 0px rgba(0, 0, 0, 0.20)',
+        '3dp':'0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 3px 5px 0px rgba(0, 0, 0, 0.20)',
+        '4dp':'0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12), 0px 7px 8px 0px rgba(0, 0, 0, 0.20) '
       }
     },
   },

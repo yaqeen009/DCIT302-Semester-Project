@@ -9,7 +9,7 @@ const Login = ({ toggle, isOpen }) => {
   return (
     <div>
       {isOpen ? (
-        <div className="form xl:my-[88px] bg-secondary-300 w-fit h-fit xl:py-[20vh] py-[10vh] px-5 align-middle xl:ml-[105px]">
+        <div className="form xl:my-[88px] bg-secondary-300 w-fit h-fit xl:py-[20vh] py-[5vh] px-5 align-middle xl:ml-[105px]">
           <form
             onSubmit={btnFunction}
             className="flex flex-col items-center font-roboto"
@@ -17,13 +17,13 @@ const Login = ({ toggle, isOpen }) => {
             <input
               type="text"
               placeholder="Enter username or email here..."
-              className="xl:placeholder:text-label md:placeholder:text-tablet-label sm:placeholder:text-mobile-label sm:w-[300px] md:w-[410px] xl:w-[456px] h-16 py-8 pl-4 rounded-lg my-4"
+              className="xl:placeholder:text-label md:placeholder:text-tablet-label sm:placeholder:text-mobile-label xl:w-[456px] md:w-[330px] xl:h-16 md:h-8 py-8 pl-4 rounded-lg my-4"
               required
             />
             <input
               type="text"
               placeholder="Enter password here..."
-              className="xl:placeholder:text-label md:placeholder:text-tablet-label sm:placeholder:text-mobile-label sm:w-[300px] md:w-[410px] xl:w-[456px] h-16 py-8 pl-4 rounded-lg my-4"
+              className="xl:placeholder:text-label md:placeholder:text-tablet-label sm:placeholder:text-mobile-label xl:w-[456px] md:w-[330px] xl:h-16 md:h-8 py-8 pl-4 rounded-lg my-4"
               required
             />
             <Button btnName={"Login"} btnType={"submit"} />
