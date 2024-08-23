@@ -9,7 +9,7 @@ const Login = ({ toggle, isOpen }) => {
   return (
     <div>
       {isOpen ? (
-        <div className="form my-[88px] bg-secondary-300 w-fit h-fit py-[20vh] px-5 align-middle ml-[105px]">
+        <div className="form xl:my-[88px] bg-secondary-300 w-fit h-fit xl:py-[20vh] md:py-[5vh] py-[5vh] px-5 align-middle xl:ml-[50px] shadow-2dp rounded-lg">
           <form
             onSubmit={btnFunction}
             className="flex flex-col items-center font-roboto"
@@ -17,19 +17,19 @@ const Login = ({ toggle, isOpen }) => {
             <input
               type="text"
               placeholder="Enter username or email here..."
-              className="placeholder:text-label w-[456px] h-16 py-8 pl-4 rounded-lg my-4"
+              className="xl:placeholder:text-label md:placeholder:text-tablet-label placeholder:text-mobile-label xl:w-[456px] md:w-[330px] w-[220px] xl:h-16 md:h-8 h-4 py-5 md:py-6 xl:py-8 pl-4 rounded-lg md:my-4 xl:my-4 my-2"
               required
             />
             <input
               type="text"
               placeholder="Enter password here..."
-              className="placeholder:text-label w-[456px] h-16 py-8 pl-4 rounded-lg my-4"
+              className="xl:placeholder:text-label md:placeholder:text-tablet-label placeholder:text-mobile-label xl:w-[456px] md:w-[330px] w-[220px] xl:h-16 md:h-8 h-4 py-5 md:py-6 xl:py-8 pl-4 rounded-lg md:my-4 xl:my-4 my-2"
               required
             />
             <Button btnName={"Login"} btnType={"submit"} />
-            <p className="text-tertiary-300 text-label">
+            <p className="text-tertiary-300 xl:text-label md:text-tablet-label text-mobile-label ">
               Don't have an account?{" "}
-              <button onClick={toggle} className="text-primary-400">
+              <button onClick={toggle} className="text-primary-400 xl:text-label md:text-tablet-label text-mobile-label">
                 Click here
               </button>{" "}
               to create one

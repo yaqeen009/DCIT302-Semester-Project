@@ -1,14 +1,19 @@
 import girl from "../assets/girl.png";
 import NavComponent from "../components/navComp";
+import Footer from "../components/footer";
 import play from "../assets/play2.svg";
 import Game from "../components/game";
 import Card from "../components/card";
 import beach from "../assets/beach.png";
+import grass from "../assets/Grass.svg";
 
 const Home = () => {
   return (
-    <div>
-      <div className="home font-comic my-10 mx-10 z-0">
+    <div className="relative">
+      <div className="absolute -top-20 left-0 w-full z-10">
+        <img src={grass} alt="Grass" className="w-full" />
+      </div>
+      <div className="home font-comic mt-10 mx-10 z-0">
         <div className="flex flex-row items-center justify-between">
           <div className="flex flex-row items-center">
             <h1 className="text-primary-300 text-headline">
@@ -76,7 +81,7 @@ const Home = () => {
           </div>
 
           <h1 className="text-body text-primary-400 my-4">New games</h1>
-          <div className="flex flex-row justify-between mb-10">
+          <div className="flex flex-row justify-between mb-2">
             <div className="flex-col">
               <Game
                 bgColor={"bg-primary-400"}
@@ -114,6 +119,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

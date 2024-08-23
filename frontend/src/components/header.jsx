@@ -6,7 +6,7 @@ import games from "../assets/games.svg";
 import rewards from "../assets/rewards.svg";
 import settings from "../assets/settings.svg";
 import NavComponent from "./navComp";
-import grass from "../assets/Grass.svg";
+
 import avatar from "../assets/avatar.png";
 
 const Header = () => {
@@ -33,9 +33,6 @@ const Header = () => {
             <img src={settings} alt="Settings" className="h-full w-full" />
           </button>
         </div>
-      </div>
-      <div className="absolute mt-8 top-10 left-0 w-full z-10">
-        <img src={grass} alt="Grass" className="w-full" />
       </div>
     </div>
   );
