@@ -34,7 +34,7 @@ const Settings = () => {
           <h2 className="text-2xl text-primary-400 mb-4">Account Settings</h2>
         </div>
 
-        <div className="bg-primary-200 p-4 rounded-lg shadow-md mt-8 md:mt-16">
+        <div className="bg-secondary-300 p-4 rounded-lg shadow-md mt-8 md:mt-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input type="text" placeholder="Enter new username here..." className="p-2 border rounded-lg" />
             <input type="password" placeholder="Enter new password here..." className="p-2 border rounded-lg" />
