@@ -3,11 +3,11 @@ import React from 'react';
 
 const Settings = () => {
   return (
-    <div className="settings font-comic z-0 flex flex-col md:flex-row bg-green-100">
+    <div className="settings font-comic z-0 flex flex-col md:flex-row bg-secondary-200">
       {/* For mobile view, headings on top */}
       <div className="space-y-8 md:hidden  bg-primary-200 p-4">
-        <h1 className="text-5xl text-yellow-800 mb-4 text-center">Settings</h1>
-        <h2 className="text-2xl text-yellow-800 mb-4 text-center">Account Settings</h2>
+        <h1 className="text-5xl text-danger-200 mb-4 text-center">Settings</h1>
+        <h2 className="text-2xl text-danger-200 mb-4 text-center">Account Settings</h2>
       </div>
       
       <div className="relative w-full md:w-[400px] h-auto md:h-screen bg-primary-200 rounded-lg drop-shadow-2xl shadow-md flex-shrink-0">
@@ -22,7 +22,7 @@ const Settings = () => {
           
           {/* Sign Out button at the bottom on mobile */}
           <div className="mt-auto w-full md:w-48 flex justify-center">
-            <button className="bg-red-500 text-white px-4 py-2 rounded-lg w-full">Sign Out</button>
+            <button className="bg-danger-100 text-white px-4 py-2 rounded-lg w-full">Sign Out</button>
           </div>
         </div>
       </div>
@@ -30,11 +30,11 @@ const Settings = () => {
       <div className="flex-1 bg-white p-4 md:p-8">
         {/* For desktop view, headings inside the content area */}
         <div className="hidden md:block space-y-8">
-          <h1 className="text-5xl text-yellow-800 mb-4">Settings</h1>
+          <h1 className="text-5xl text-danger-200 mb-4">Settings</h1>
           <h2 className="text-2xl text-primary-400 mb-4">Account Settings</h2>
         </div>
 
-        <div className="bg-yellow-100 p-4 rounded-lg shadow-md mt-8 md:mt-16">
+        <div className="bg-primary-200 p-4 rounded-lg shadow-md mt-8 md:mt-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input type="text" placeholder="Enter new username here..." className="p-2 border rounded-lg" />
             <input type="password" placeholder="Enter new password here..." className="p-2 border rounded-lg" />
@@ -48,12 +48,12 @@ const Settings = () => {
               <option>Other</option>
             </select>
           </div>
-          <button className="bg-pink-500 text-white px-4 py-2 mt-4 rounded-lg">Confirm</button>
+          <button className="bg-primary-400 text-white px-4 py-2 mt-4 rounded-lg">Confirm</button>
         </div>
 
         <div className="mt-8">
           <h3 className="text-2xl font-bold text-primary-400 mb-4">Notification settings</h3>
-          <button className="bg-purple-500 text-white px-12 py-4 rounded-lg">Off Notifications</button>
+          <button className="bg-secondary-400 text-white px-12 py-4 rounded-lg">Off Notifications</button>
         </div>
       </div>
     </div>
