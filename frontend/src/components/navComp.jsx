@@ -17,10 +17,10 @@ const NavComponent = ({ icon, navName, path }) => {
   return (
     <Link to={path}>
       <div
-        className={`p-4 font-comic text-body  m-2 h-fit rounded-lg text-primary-400 inline-flex align-middle cursor-pointer ${
+        className={`p-4 font-comic xl:text-body md:text-tablet-body text-mobile-headline m-2 h-fit rounded-lg text-primary-400 inline-flex align-middle cursor-pointer ${
           isClicked
-            ? " bg-success-400 hover:bg-success-100"
-            : "bg-primary-200 hover:bg-primary-300"
+            ? " bg-success-400 hover:bg-success-100 sm:bg-transparent sm:hover:bg-transparent"
+            : "bg-primary-200 hover:bg-primary-300 sm:bg-transparent sm:hover:bg-transparent"
         }`}
         onClick={handleClick}
       >
