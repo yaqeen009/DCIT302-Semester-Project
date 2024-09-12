@@ -1,6 +1,6 @@
-const Button = ({btnName, btnFunction, btnType}) => {
+const Button = ({btnName, btnFunction, btnType, btnColor, btnHoverColor, btntxtColor}) => {
     return ( 
-        <div className="font-roboto bg-primary-400 text-mobile-label md:text-tablet-label xl:text-label w-fit m-5 p-2 rounded-lg text-tertiary-400 shadow-1dp hover:text-tertiary-400  hover:bg-secondary-400">
+        <div className={`font-roboto bg-${btnColor} text-mobile-label md:text-tablet-label xl:text-label w-fit m-5 p-2 rounded-lg text-${btntxtColor} shadow-1dp hover:${btnHoverColor}`}>
             <button type={btnType} onClick={btnFunction}>{btnName}</button>
         </div>
      );
