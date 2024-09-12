@@ -5,7 +5,9 @@ const Settings = () => {
   return (
     <div className="settings font-comic z-0 flex flex-col md:flex-row bg-secondary-200">
       {/* For mobile view, headings on top */}
+      
       <div className="space-y-8 md:hidden  bg-primary-200 p-4">
+        
         <h1 className="text-5xl text-danger-200 mb-4 text-center">Settings</h1>
         <h2 className="text-2xl text-danger-200 mb-4 text-center">Account Settings</h2>
       </div>
