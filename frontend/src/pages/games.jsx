@@ -25,22 +25,24 @@ const Games = () => {
           {/* Top Games Section */}
           <div className="flex flex-row justify-between sm:flex-col sm:space-y-4">
             {/* First Game Card */}
-            <Card
-              coverImg={beach}
-              bgColor={"bg-[#46D7FA]"}
-              img={play}
-              secondaryColor={"text-[#F4538A] border-[#F4538A]"}
-              tertiaryColor={"hover:bg-[#F1D9DB]"}
-            />
-
-            {/* Second Game Card */}
-            <Card
-              coverImg={sunset}
-              bgColor={"bg-[#3E9F00]"}
-              img={play2}
-              secondaryColor={"text-primary-200 border-primary-200"}
-              tertiaryColor={"hover:bg-secondary-300"}
-            />
+            <div className="flex flex-col md:flex-row space-x-4  justify-between">
+              <Card
+                coverImg={beach}
+                bgColor={"bg-success-100"}
+                img={play}
+                secondaryColor={"text-primary-400 border-primary-400"}
+                tertiaryColor={"hover:bg-danger-400"}
+                className="w-full md:w-[45%] lg:w-[30%]"
+              />
+              <Card
+                coverImg={sunset}
+                bgColor={"bg-primary-100"}
+                img={play2}
+                secondaryColor={"text-primary-300 border-primary-200"}
+                tertiaryColor={"hover:bg-secondary-300"}
+                className="w-full md:w-[45%] lg:w-[30%]"
+              />
+            </div>
           </div>
 
           {/* Top Games List */}
@@ -142,10 +144,15 @@ const Games = () => {
         </div>
 
         {/* Bottom Grass Image */}
-        <img className="absolute -bottom-20 left-0 w-full z-10 rotate-180" src={grass} />
+        <img
+          className="absolute -bottom-20 left-0 w-full z-10 rotate-180"
+          src={grass}
+        />
       </div>
     </div>
   );
 };
 
 export default Games;
+
+//
