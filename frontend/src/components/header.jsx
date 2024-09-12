@@ -79,10 +79,7 @@ const Header = () => {
       <div className="bg-primary-100 sm:bg-secondary-200 w-full h-fit flex px-4 py-4 items-center justify-between relative z-20">
         {/* Logo and Menu Button */}
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-8" />
-          <button onClick={toggleDrawer} className="ml-4">
-            <img src={menuIcon} alt="Menu" className="h-8 w-8" />
-          </button>
+          <img src={logo} alt="Logo" className="h-full sm:h-8" />
         </div>
 
         {/* User Icons */}
@@ -95,9 +92,12 @@ const Header = () => {
           </button>
           <button
             onClick={handleSettingsClick}
-            className="h-8 w-8 flex items-center justify-center"
+            className="h-8 w-8 flex items-center justify-center sm:hidden"
           >
-            <img src={settings} alt="Settings" className="h-full w-full" />
+            <img src={settings} alt="Settings" className="h-full w-full " />
+          </button>
+          <button onClick={toggleDrawer} className="ml-4 hidden sm:block">
+            <img src={menuIcon} alt="Menu" className="h-8 w-8" />
           </button>
         </div>
 
