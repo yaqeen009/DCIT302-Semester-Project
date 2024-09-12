@@ -58,6 +58,9 @@ module.exports = {
         'mobile-body':'12px',
         'mobile-label':'11px',
       },
+      fontWeight:{
+        bold: "700"
+      },
       boxShadow:{
         '1dp':'0px 0px 2px 0px rgba(0, 0, 0, 0.14), 0px 2px2px 0px rgba(0, 0, 0, 0.12), 0px 1px 3px 0px rgba(0, 0, 0, 0.20)',
         '2dp':'0px 3px 3px 0px rgba(0, 0, 0, 0.14), 0px 3px 4px 0px rgba(0, 0, 0, 0.12), 0px 1px 8px 0px rgba(0, 0, 0, 0.20)',

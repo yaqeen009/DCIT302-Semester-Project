@@ -28,8 +28,13 @@ const Header = () => {
       <div className="bg-primary-100 sm:bg-secondary-200 w-full h-fit flex px-4 py-4 items-center justify-between relative z-20">
         {/* Logo and Menu Button */}
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-full sm:h-8" />
+          <img src={logo} alt="Logo" className="h-full sm:h-16" />
         </div>
+        <nav className="flex flex-row items-center sm:hidden">
+            <NavComponent icon={home} navName={"Home"} path={"/home"} />
+            <NavComponent icon={games} navName={"Games"} path={"/games"} />
+            <NavComponent icon={rewards} navName={"Rewards"} path={"/rewards"} />
+          </nav>
 
         {/* User Icons */}
         <div className="flex flex-row items-center space-x-4">
@@ -60,13 +65,13 @@ const Header = () => {
           <button onClick={toggleDrawer} className="m-4">
             <img src={closeIcon} alt="Close" className="h-8 w-8" />
           </button>
-          <nav className="flex flex-col items-center space-y-6 mt-8 text-white">
+          <nav className="sm:flex flex-col items-center space-y-6 mt-8 text-white hidden">
             <NavComponent icon={home} navName={"Home"} path={"/home"} />
             <NavComponent icon={games} navName={"Games"} path={"/games"} />
             <NavComponent icon={rewards} navName={"Rewards"} path={"/rewards"} />
             <NavComponent icon={settings} navName={"Settings"} path={"/settings"} />
           </nav>
-          <div className="mt-auto mb-4 text-center text-white">
+          <div className="mt-auto mb-4 text-center text-tertiary-400">
             <p>safeplaylearn.org ©2024</p>
           </div>
         </div>
