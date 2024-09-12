@@ -14,7 +14,7 @@ const Games = () => {
         <img src={grass} alt="Grass" className="w-full" />
       </div>
 
-      <div className="games font-comic my-10 mx-10 z-0">
+      <div className="games font-comic my-10 mx-10 sm:my-0 sm:mx-5 z-0">
         {/* Title Section */}
         <h1 className="text-primary-300 text-headline sm:text-mobile-headline font-bold">
           All Games
@@ -23,7 +23,7 @@ const Games = () => {
         {/* Games Section */}
         <div className="games flex flex-col space-y-8">
           {/* Top Games Section */}
-          <div className="flex flex-row justify-between sm:flex-col sm:space-y-4">
+          <div className="flex flex-row sm:flex-wrap justify-between sm:flex-col sm:space-y-4">
             {/* First Game Card */}
             <div className="flex flex-col md:flex-row space-x-4  justify-between">
               <Card
@@ -47,7 +47,7 @@ const Games = () => {
 
           {/* Top Games List */}
           <h1 className="text-body text-primary-400 my-4">Top Games</h1>
-          <div className="flex flex-row justify-between sm:flex-wrap sm:space-y-4">
+          <div className="flex flex-row sm:flex-wrap justify-between sm:space-y-4">
             <div className="flex-col space-y-4">
               <Game
                 bgColor={"bg-primary-300"}
@@ -76,7 +76,7 @@ const Games = () => {
 
           {/* Recently Played Section */}
           <h1 className="text-body text-primary-400 my-4">Recently Played</h1>
-          <div className="flex flex-row justify-between sm:flex-wrap sm:space-y-4">
+          <div className="flex flex-row sm:flex-wrap justify-between sm:space-y-4">
             <div className="flex-col space-y-4">
               <Game
                 bgColor={"bg-primary-100"}
@@ -105,7 +105,7 @@ const Games = () => {
 
           {/* New Games Section */}
           <h1 className="text-body text-primary-400 my-4">New games</h1>
-          <div className="flex flex-row justify-between mb-10 sm:flex-wrap sm:space-y-4">
+          <div className="flex flex-row sm:flex-wrap justify-between mb-10 sm:space-y-4">
             <div className="flex-col space-y-4">
               <Game
                 bgColor={"bg-primary-400"}
@@ -144,10 +144,7 @@ const Games = () => {
         </div>
 
         {/* Bottom Grass Image */}
-        <img
-          className="absolute -bottom-20 left-0 w-full z-10 rotate-180"
-          src={grass}
-        />
+        <img className="absolute -bottom-20 left-0 w-full z-10 rotate-180" src={grass} />
       </div>
     </div>
   );

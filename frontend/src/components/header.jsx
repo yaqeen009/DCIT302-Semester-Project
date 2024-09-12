@@ -7,8 +7,8 @@ import rewards from "../assets/rewards.svg";
 import settings from "../assets/settings.svg";
 import notiOff from "../assets/noti-off.svg";
 import avatar from "../assets/avatar.png";
-import menuIcon from "../assets/menu.svg"; // Hamburger icon
-import closeIcon from "../assets/close.svg"; // Close icon
+import menuIcon from "../assets/menu.svg"; 
+import closeIcon from "../assets/close.svg";
 import NavComponent from "./navComp";
 
 const Header = () => {
