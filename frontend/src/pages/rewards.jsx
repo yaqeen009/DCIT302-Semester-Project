@@ -8,7 +8,7 @@ const Rewards = () => {
       <div className="absolute -top-20 left-0 w-full z-10">
         <img src={grass} alt="Grass" className="w-full" />
       </div>
-      <div className="rewards font-comic mt-10 mx-10 sm:mx-5 sm:my-0 z-0">
+      <div className="rewards font-comic mt-10 mx-10 sm:mx-4 sm:my-0 z-0">
         <h1 className="text-primary-300 text-headline">All Games</h1>
         <div className="flex flex-col">
           <section className="achievement-box mb-8">
@@ -16,9 +16,11 @@ const Rewards = () => {
             <div className="box-border border border-tertiary-300 h-[418px]"></div>
           </section>
           <section className="rewards flex flex-col">
-            <div className="flex flex-row justify-between items-baseline mb-4">
-              <h1 className="text-primary-400 text-body">Claim Rewards</h1>
-              <Button btnName={"Claim All"} btnType={"button"} />
+            <div className="flex flex-row justify-between items-baseline mb-4 sm:-mb-4">
+              <h1 className="text-primary-400 text-body sm:text-mobile-title">Claim Rewards</h1>
+              <div className="sm:-mr-5">
+                <Button btnName={"Claim All"} btnType={"button"} />
+              </div>
             </div>
             <div className="overflow-y-scroll w-full h-[80vh] mb-12">
                 <Achievement/>

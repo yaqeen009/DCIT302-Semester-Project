@@ -45,7 +45,7 @@ const Games = () => {
 
           {/* Top Games List */}
           <h1 className="text-body text-primary-400 my-4">Top Games</h1>
-          <div className="flex flex-row sm:flex-wrap justify-between sm:flex-wrap sm:space-y-4">
+          <div className="flex flex-row sm:flex-wrap justify-between sm:space-y-4">
             <div className="flex-col space-y-4">
               <Game
                 bgColor={"bg-primary-300"}
@@ -74,7 +74,7 @@ const Games = () => {
 
           {/* Recently Played Section */}
           <h1 className="text-body text-primary-400 my-4">Recently Played</h1>
-          <div className="flex flex-row sm:flex-wrap justify-between sm:flex-wrap sm:space-y-4">
+          <div className="flex flex-row sm:flex-wrap justify-between sm:space-y-4">
             <div className="flex-col space-y-4">
               <Game
                 bgColor={"bg-primary-100"}
@@ -103,7 +103,7 @@ const Games = () => {
 
           {/* New Games Section */}
           <h1 className="text-body text-primary-400 my-4">New games</h1>
-          <div className="flex flex-row sm:flex-wrap justify-between mb-10 sm:flex-wrap sm:space-y-4">
+          <div className="flex flex-row sm:flex-wrap justify-between mb-10 sm:space-y-4">
             <div className="flex-col space-y-4">
               <Game
                 bgColor={"bg-primary-400"}

@@ -4,8 +4,8 @@ const Achievement = () => {
       <div className="w-full h-28 sm:h-20 flex flex-row">
         <div className="w-[90%] h-full bg-secondary-300 rounded-l-lg">
           <div className="text m-4">
-            <h1 className="text-title sm:text-mobile-title">Math</h1>
-            <span className="flex flex-row items center justify-between text-body sm:text-mobile-body">
+            <h1 className="text-title sm:text-mobile-title text-primary-400">Math</h1>
+            <span className="flex flex-row items center justify-between text-body sm:text-mobile-body text-primary-400">
               <p className="">Complete 20 math games</p>
               <p className="">10/20</p>
             </span>
@@ -15,7 +15,7 @@ const Achievement = () => {
           </div>
         </div>
         <div className="w-[10%] sm:w-[25%] h-full bg-success-200 rounded-r-lg flex items-center">
-            <h1 className="text-headline sm:text-mobile-headline text-center mx-6">Claim</h1>
+            <h1 className="text-headline sm:text-mobile-headline text-center mx-6 text-secondary-200">Claim</h1>
         </div>
       </div>
     </div>
