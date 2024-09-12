@@ -1,5 +1,6 @@
 import girl from "../assets/girl.png";
 import NavComponent from "../components/navComp";
+import Footer from "../components/footer";
 import play from "../assets/play2.svg";
 import Game from "../components/game";
 import Card from "../components/card";
@@ -80,7 +81,7 @@ const Home = () => {
           </div>
 
           <h1 className="text-body text-primary-400 my-4">New games</h1>
-          <div className="flex flex-row justify-between mb-12">
+          <div className="flex flex-row justify-between mb-2">
             <div className="flex-col">
               <Game
                 bgColor={"bg-primary-400"}
@@ -118,7 +119,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <img className="absolute -bottom-12 left-0 w-full z-10 rotate-180" src={grass} />
+      <Footer/>
     </div>
   );
 };
