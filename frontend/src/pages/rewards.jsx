@@ -8,7 +8,7 @@ const Rewards = () => {
       <div className="absolute -top-20 left-0 w-full z-10">
         <img src={grass} alt="Grass" className="w-full" />
       </div>
-      <div className="rewards font-comic mt-10 mx-10 z-0">
+      <div className="rewards font-comic mt-10 mx-10 sm:mx-5 sm:my-0 z-0">
         <h1 className="text-primary-300 text-headline">All Games</h1>
         <div className="flex flex-col">
           <section className="achievement-box mb-8">
@@ -31,7 +31,7 @@ const Rewards = () => {
             </div>
           </section>
         </div>
-        <img className="absolute -bottom-12 left-0 w-full z-10 rotate-180" src={grass} />
+        <img className="absolute -bottom-12 sm:-bottom-2 left-0 w-full z-10 rotate-180" src={grass} />
       </div>
     </div>
   );

@@ -12,10 +12,10 @@ const Games = () => {
       <div className="absolute -top-20 left-0 w-full z-10">
         <img src={grass} alt="Grass" className="w-full" />
       </div>
-      <div className="games font-comic my-10 mx-10 z-0">
+      <div className="games font-comic my-10 mx-10 sm:my-0 sm:mx-5 z-0">
         <h1 className="text-primary-300 text-headline">All Games</h1>
         <div className="games flex flex-col">
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-row sm:flex-wrap justify-between">
             <Card
               coverImg={beach}
               bgColor={"bg-[#46D7FA]"}
@@ -33,7 +33,7 @@ const Games = () => {
           </div>
 
           <h1 className="text-body text-primary-400 my-4">Top Games</h1>
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-row sm:flex-wrap justify-between">
             <div className="flex-col">
               <Game
                 bgColor={"bg-primary-300"}
@@ -61,7 +61,7 @@ const Games = () => {
           </div>
 
           <h1 className="text-body text-primary-400 my-4">Recently Played</h1>
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-row sm:flex-wrap justify-between">
             <div className="flex-col">
               <Game
                 bgColor={"bg-primary-100"}
@@ -89,7 +89,7 @@ const Games = () => {
           </div>
 
           <h1 className="text-body text-primary-400 my-4">New games</h1>
-          <div className="flex flex-row justify-between mb-10">
+          <div className="flex flex-row sm:flex-wrap justify-between mb-10">
             <div className="flex-col">
               <Game
                 bgColor={"bg-primary-400"}
@@ -126,7 +126,7 @@ const Games = () => {
             </div>
           </div>
         </div>
-        <img className="absolute -bottom-20 left-0 w-full z-10 rotate-180" src={grass} />
+        <img className="absolute -bottom-12 sm:-bottom-2 left-0 w-full z-10 rotate-180" src={grass} />
       </div>
     </div>
   );

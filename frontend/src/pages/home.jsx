@@ -79,7 +79,6 @@ const Home = () => {
               />
             </div>
           </div>
-
           <h1 className="text-body text-primary-400 my-4">New games</h1>
           <div className="flex flex-row sm:flex-wrap justify-between mb-2">
             <div className="flex-col">
@@ -119,7 +118,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <img className="absolute -bottom-12 sm:-bottom-2 left-0 w-full z-10 rotate-180" src={grass} />
     </div>
   );
 };
