@@ -1,5 +1,6 @@
 import avatar from "../assets/avatar.png";
 import React from 'react';
+import NavComponent from "../components/navComp";
 
 const Settings = () => {
   return (
@@ -7,9 +8,8 @@ const Settings = () => {
       {/* For mobile view, headings on top */}
       
       <div className="space-y-8 md:hidden p-4">
-        
         <h1 className="text-headline text-primary-300 sm:text-mobile-headline ">Settings</h1>
-        <h2 className="text-2xl text-primary-400">Account Settings</h2>
+        <h2 className="text-title sm:text-mobile-title text-primary-400">Account Settings</h2>
       </div>
       
       <div className="relative w-full md:w-[400px] h-auto md:h-screen bg-secondary-300 drop-shadow-2xl shadow-md flex-shrink-0">
@@ -24,7 +24,8 @@ const Settings = () => {
           
           {/* Sign Out button at the bottom on mobile */}
           <div className="mt-auto w-full md:w-48 flex justify-center">
-            <button className="bg-danger-100 text-white px-4 py-2 rounded-lg w-full">Sign Out</button>
+            {/* <button className="bg-danger-100 text-danger-400 px-4 py-2 rounded-lg w-full">Sign Out</button> */}
+            <NavComponent navName={"Sign Out"}/>
           </div>
         </div>
       </div>

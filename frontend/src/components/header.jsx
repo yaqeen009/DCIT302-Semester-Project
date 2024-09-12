@@ -31,9 +31,9 @@ const Header = () => {
           <img src={logo} alt="Logo" className="h-full sm:h-16" />
         </div>
         <nav className="flex flex-row items-center sm:hidden">
-            <NavComponent icon={home} navName={"Home"} path={"/home"} />
-            <NavComponent icon={games} navName={"Games"} path={"/games"} />
-            <NavComponent icon={rewards} navName={"Rewards"} path={"/rewards"} />
+            <NavComponent icon={home} navName={"Home"} path={"/home"} text={"primary-400"} color={"primary-200"} hovered={"primary-300"} hoveredClicked={"success-200"} clicked={"success-100"}/>
+            <NavComponent icon={games} navName={"Games"} path={"/games"} text={"primary-400"} color={"primary-200"} hovered={"primary-300"} hoveredClicked={"success-200"} clicked={"success-100"}/>
+            <NavComponent icon={rewards} navName={"Rewards"} path={"/rewards"} text={"primary-400"} color={"primary-200"} hovered={"primary-300"} hoveredClicked={"success-200"} clicked={"success-100"}/>
           </nav>
 
         {/* User Icons */}
@@ -66,10 +66,10 @@ const Header = () => {
             <img src={closeIcon} alt="Close" className="h-8 w-8" />
           </button>
           <nav className="sm:flex flex-col items-center space-y-6 mt-8 text-white hidden">
-            <NavComponent icon={home} navName={"Home"} path={"/home"} />
-            <NavComponent icon={games} navName={"Games"} path={"/games"} />
-            <NavComponent icon={rewards} navName={"Rewards"} path={"/rewards"} />
-            <NavComponent icon={settings} navName={"Settings"} path={"/settings"} />
+            <NavComponent icon={home} navName={"Home"} path={"/home"} text={"primary-400"}/>
+            <NavComponent icon={games} navName={"Games"} path={"/games"} text={"primary-400"}/>
+            <NavComponent icon={rewards} navName={"Rewards"} path={"/rewards"} text={"primary-400"}/>
+            <NavComponent icon={settings} navName={"Settings"} path={"/settings"} text={"primary-400"}/>
           </nav>
           <div className="mt-auto mb-4 text-center text-tertiary-400">
             <p>safeplaylearn.org ©2024</p>

@@ -19,7 +19,7 @@ const Rewards = () => {
             <div className="flex flex-row justify-between items-baseline mb-4 sm:-mb-4">
               <h1 className="text-primary-400 text-body sm:text-mobile-title">Claim Rewards</h1>
               <div className="sm:-mr-5">
-                <Button btnName={"Claim All"} btnType={"button"} />
+                <Button btnName={"Claim All"} btnType={"button"} btnColor={"primary-400"} btntxtColor={"tertiary-400"} btnHoverColor={"secondary-400"}/>
               </div>
             </div>
             <div className="overflow-y-scroll w-full h-[80vh] mb-12">
