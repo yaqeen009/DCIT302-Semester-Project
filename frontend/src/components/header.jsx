@@ -1,10 +1,11 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/Logo.png";
 import home from "../assets/home.svg";
 import games from "../assets/games.svg";
 import rewards from "../assets/rewards.svg";
 import settings from "../assets/settings.svg";
+import notiOff from "../assets/noti-off.svg"
 import NavComponent from "./navComp";
 
 import avatar from "../assets/avatar.png";
@@ -13,7 +14,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const handleSettingsClick = () => {
-    navigate('/settings'); // Navigate to the settings page
+    navigate("/settings"); // Navigate to the settings page
   };
 
   return (
@@ -22,14 +23,22 @@ const Header = () => {
         <div>
           <img src={logo} alt="Logo" />
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-row sm:flex-col">
           <NavComponent icon={home} navName={"Home"} path={"/home"} />
           <NavComponent icon={games} navName={"Games"} path={"/games"} />
           <NavComponent icon={rewards} navName={"Rewards"} path={"/rewards"} />
         </div>
         <div className="flex flex-row items-center">
-          <img src={avatar} alt="Avatar" />
-          <button onClick={handleSettingsClick} className="ml-4 h-8 w-8 flex items-center justify-center">
+          <button className="mr-4 h-8 w-8 flex items-center justify-center">
+            <img src={notiOff} alt="notification" />
+          </button>
+          <button>
+            <img src={avatar} alt="Avatar" />
+          </button>
+          <button
+            onClick={handleSettingsClick}
+            className="ml-4 h-8 w-8 flex items-center justify-center"
+          >
             <img src={settings} alt="Settings" className="h-full w-full" />
           </button>
         </div>

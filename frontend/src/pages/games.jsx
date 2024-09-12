@@ -4,11 +4,15 @@ import Game from "../components/game";
 import Card from "../components/card";
 import beach from "../assets/beach.png"
 import sunset from "../assets/sunset.png"
+import grass from "../assets/Grass.svg"
 
 const Games = () => {
   return (
-    <div>
-      <div className="home font-comic my-10 mx-10 z-0">
+    <div className="relative">
+      <div className="absolute -top-20 left-0 w-full z-10">
+        <img src={grass} alt="Grass" className="w-full" />
+      </div>
+      <div className="games font-comic my-10 mx-10 z-0">
         <h1 className="text-primary-300 text-headline">All Games</h1>
         <div className="games flex flex-col">
           <div className="flex flex-row justify-between">
@@ -122,6 +126,7 @@ const Games = () => {
             </div>
           </div>
         </div>
+        <img className="absolute -bottom-20 left-0 w-full z-10 rotate-180" src={grass} />
       </div>
     </div>
   );

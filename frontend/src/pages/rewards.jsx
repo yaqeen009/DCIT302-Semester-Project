@@ -1,15 +1,14 @@
 import Button from "../components/button";
 import grass from "../assets/Grass.svg";
-import Footer from "../components/footer";
 import Achievement from "../components/achievement";
 
 const Rewards = () => {
   return (
-    <div>
-      <div className="home font-comic mt-10 mx-10 z-0">
-        <div className="absolute mt-8 top-10 left-0 w-full z-10">
-          <img src={grass} alt="Grass" className="w-full" />
-        </div>
+    <div className="relative">
+      <div className="absolute -top-20 left-0 w-full z-10">
+        <img src={grass} alt="Grass" className="w-full" />
+      </div>
+      <div className="rewards font-comic mt-10 mx-10 z-0">
         <h1 className="text-primary-300 text-headline">All Games</h1>
         <div className="flex flex-col">
           <section className="achievement-box mb-8">
@@ -21,7 +20,7 @@ const Rewards = () => {
               <h1 className="text-primary-400 text-body">Claim Rewards</h1>
               <Button btnName={"Claim All"} btnType={"button"} />
             </div>
-            <div className="overflow-y-scroll w-full h-[80vh]">
+            <div className="overflow-y-scroll w-full h-[80vh] mb-12">
                 <Achievement/>
                 <Achievement/>
                 <Achievement/>
@@ -32,8 +31,8 @@ const Rewards = () => {
             </div>
           </section>
         </div>
+        <img className="absolute -bottom-12 left-0 w-full z-10 rotate-180" src={grass} />
       </div>
-      <Footer />
     </div>
   );
 };
