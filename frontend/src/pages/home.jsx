@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="relative">
       <div className="absolute -top-20 left-0 w-full z-10">
-        <img src={grass} alt="Grass" className="w-full" />
+        <img src={grass} alt="Grass" className="w-full"/>
       </div>
       <div className="home font-comic mt-10 mx-10 z-0">
         <div className="flex flex-row items-center justify-between">
