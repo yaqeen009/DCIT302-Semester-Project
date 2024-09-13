@@ -1,15 +1,14 @@
-import play from "../assets/play2.svg";
-import play2 from "../assets/play3.svg";
+import play from"../assets/play2.svg";
+import play2 from "../assets/play3.svg"
 import Game from "../components/game";
 import Card from "../components/card";
-import beach from "../assets/beach.png";
-import sunset from "../assets/sunset.png";
-import grass from "../assets/Grass.svg";
+import beach from "../assets/beach.png"
+import sunset from "../assets/sunset.png"
+import grass from "../assets/Grass.svg"
 
 const Games = () => {
   return (
     <div className="relative">
-      {/* Top Grass Image */}
       <div className="absolute -top-20 left-0 w-full z-10">
         <img src={grass} alt="Grass" className="w-full" />
       </div>
@@ -23,9 +22,9 @@ const Games = () => {
         {/* Games Section */}
         <div className="games flex flex-col space-y-8 sm:space-y-4 sm:mb-10">
           {/* Top Games Section */}
-          <div className="flex flex-row  justify-between sm:flex-col sm:space-y-4">
+          <div className="flex flex-row sm:flex-wrap justify-between sm:flex-col sm:space-y-4">
             {/* First Game Card */}
-            <div className="flex flex-row md:space-x-4 sm:flex-wrap lg:space-x-6 justify-between w-full">
+            <div className="flex flex-col md:flex-row md:space-x-4 sm:flex-wrap lg:space-x-6 lg:flex-row justify-between w-full">
               <Card
                 coverImg={beach}
                 bgColor={"bg-success-100"}
@@ -45,10 +44,9 @@ const Games = () => {
             </div>
           </div>
 
-          {/* Top Games List */}
           <h1 className="text-body text-primary-400 my-4">Top Games</h1>
-          <div className="flex flex-row sm:flex-wrap justify-between sm:space-y-4">
-            <div className="flex-col space-y-4">
+          <div className="flex flex-row flex-wrap justify-between">
+            <div className="flex-col">
               <Game
                 bgColor={"bg-primary-300"}
                 gameName={"Addition"}
@@ -60,7 +58,7 @@ const Games = () => {
                 category={"Math"}
               />
             </div>
-            <div className="flex-col space-y-4">
+            <div className="flex-col">
               <Game
                 bgColor={"bg-primary-300"}
                 gameName={"Addition"}
@@ -74,10 +72,9 @@ const Games = () => {
             </div>
           </div>
 
-          {/* Recently Played Section */}
           <h1 className="text-body text-primary-400 my-4">Recently Played</h1>
-          <div className="flex flex-row sm:flex-wrap justify-between sm:space-y-4">
-            <div className="flex-col space-y-4">
+          <div className="flex flex-row flex-wrap justify-between">
+            <div className="flex-col">
               <Game
                 bgColor={"bg-primary-100"}
                 gameName={"Addition"}
@@ -89,7 +86,7 @@ const Games = () => {
                 category={"Math"}
               />
             </div>
-            <div className="flex-col space-y-4">
+            <div className="flex-col">
               <Game
                 bgColor={"bg-primary-100"}
                 gameName={"Addition"}
@@ -103,10 +100,9 @@ const Games = () => {
             </div>
           </div>
 
-          {/* New Games Section */}
-          <h1 className="text-body text-primary-400 my-4 mb-10">New games</h1>
-          <div className="flex flex-row sm:flex-wrap justify-between mb-10 sm:space-y-4">
-            <div className="flex-col space-y-4">
+          <h1 className="text-body text-primary-400 my-4">New games</h1>
+          <div className="flex flex-row flex-wrap mx-2 justify-between mb-10">
+            <div className="flex-col">
               <Game
                 bgColor={"bg-primary-400"}
                 gameName={"Addition"}
@@ -123,7 +119,7 @@ const Games = () => {
                 category={"Math"}
               />
             </div>
-            <div className="flex-col space-y-4">
+            <div className="flex-col">
               <Game
                 bgColor={"bg-primary-400"}
                 gameName={"Addition"}
@@ -145,7 +141,7 @@ const Games = () => {
 
         {/* Bottom Grass Image */}
         <img
-          className="absolute -bottom-20 sm:-bottom-12 left-0 w-full z-10 rotate-180 mt-10"
+          className="absolute -bottom-16 sm:-bottom-12 left-0 w-full z-10 rotate-180 mt-10"
           src={grass}
         />
       </div>
@@ -154,5 +150,3 @@ const Games = () => {
 };
 
 export default Games;
-
-//
