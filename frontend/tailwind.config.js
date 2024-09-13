@@ -69,7 +69,7 @@ module.exports = {
       },
       screens:{
         'sm':{'max': '640px'},
-        'md':{'max': '1023px'}
+        'md':{'min':'641px','max': '1023px'}
       },
     },
   },

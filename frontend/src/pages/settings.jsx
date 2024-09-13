@@ -23,7 +23,7 @@ const Settings = () => {
       </div>
 
       <div className="relative w-full md:w-[400px] sm:w-[90vw] sm:flex sm:self-center sm:justify-around sm:rounded-lg sm:drop-shadow-none sm:shadow-none h-auto sm:h-fit md:h-screen bg-secondary-300 drop-shadow-2xl shadow-md flex-shrink-0">
-        <div className="flex flex-col items-center p-4 h-full">
+        <div className="flex flex-col items-center p-4 h-full sm:h-fit">
           <div className="avatar flex flex-col sm:flex-row sm:basis-1/2 space-y-4 items-center md:items-left my-8 ">
             <div className="flex flex-col sm:pr-[20vw]">
               <img
@@ -65,7 +65,7 @@ const Settings = () => {
         </div>
       </div>
 
-      <div className="flex-1 p-4 md:p-8">
+      <div className="flex-1 bg-white p-4 md:p-8">
         {/* For desktop view, headings inside the content area */}
         <div className="hidden md:block space-y-8">
           <h1 className="text-5xl text-danger-200 mb-4">Settings</h1>
