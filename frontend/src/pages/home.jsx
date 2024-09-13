@@ -17,7 +17,7 @@ const Home = () => {
 
       {/* Main Home Section */}
       <div className="home font-comic mt-10 mx-10 sm:mt-0 sm:mx-4 z-0">
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex sm:flex-col flex-row items-start justify-between">
           {/* Welcome text with the girl image */}
           <div>
             <div className="flex flex-row items-center">
@@ -26,22 +26,22 @@ const Home = () => {
               </h1>
               <img src={girl} className="scale-75" />
             </div>
-
-            <h1 className="text-body text-primary-400 mb-2">Top Games</h1>
           </div>
 
           {/* "For Parents" button hidden for tablet */}
-          <div className="-mr-2 md:hidden sm:hidden font-bold">
-            <NavComponent
-              navName={"For Parents"}
-              color={"primary-200"}
-              text={"primary-400"}
-              hovered={"primary-300"}
-            />
+          <div className="-mr-2 font-bold p-4 bg-secondary-300 rounded-lg">
+            <div className="flex flex-row justify-between text-primary-400">
+              <p>Level 5</p>
+              <p>3/6</p>
+            </div>
+          <div className="progress-bar h-3 sm:h-2 w-[36vw] sm:w-[70vw] border border-primary-400 rounded-lg mx-4 flex">
+            <span className="w-[50%] h-full bg-primary-400 rounded-lg"></span>
+          </div>
           </div>
         </div>
 
         {/* Games section */}
+        <h1 className="text-body text-primary-400 mb-2">Top Games</h1>
         <div className="games flex flex-col">
           {/* Top Games and Continue Game Card */}
           <div className="flex flex-row sm:flex-col space-x-4 sm:space-x-0 justify-between">
