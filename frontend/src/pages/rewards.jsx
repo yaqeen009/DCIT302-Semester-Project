@@ -5,7 +5,7 @@ import Achievement from "../components/achievement";
 const Rewards = () => {
   return (
     <div className="relative">
-      <div className="absolute -top-20 left-0 w-full z-10">
+      <div className="absolute -top-20 left-0 w-full z-10 sm:hidden md:-top-16">
         <img src={grass} alt="Grass" className="w-full" />
       </div>
       <div className="rewards font-comic mt-10 mx-10 sm:mx-4 sm:my-0 z-0">
@@ -22,7 +22,7 @@ const Rewards = () => {
                 <Button btnName={"Claim All"} btnType={"button"} btnColor={"primary-400"} btntxtColor={"tertiary-400"} btnHoverColor={"secondary-400"}/>
               </div>
             </div>
-            <div className="overflow-y-scroll w-full h-[80vh] mb-12">
+            <div className="overflow-y-scroll w-full h-[80vh] mb-12 md:mb-8">
                 <Achievement/>
                 <Achievement/>
                 <Achievement/>
@@ -33,7 +33,7 @@ const Rewards = () => {
             </div>
           </section>
         </div>
-        <img className="absolute -bottom-12 sm:-bottom-2 left-0 w-full z-10 rotate-180 mt-10" src={grass} />
+        <img className="absolute -bottom-12 md:-bottom-6 sm:-bottom-2 left-0 w-full z-10 rotate-180 mt-10" src={grass} />
       </div>
     </div>
   );
