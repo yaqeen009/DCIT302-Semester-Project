@@ -68,7 +68,8 @@ module.exports = {
         '4dp':'0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12), 0px 7px 8px 0px rgba(0, 0, 0, 0.20) '
       },
       screens:{
-        'sm':{'max': '640px'}
+        'sm':{'max': '640px'},
+        'md':{'max': '1023px'}
       },
     },
   },
