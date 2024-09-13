@@ -65,7 +65,7 @@ const Settings = () => {
         </div>
       </div>
 
-      <div className="flex-1 bg-white p-4 md:p-8">
+      <div className="flex-1 bg-secondary-200 p-4 md:p-8">
         {/* For desktop view, headings inside the content area */}
         <div className="hidden md:block space-y-8">
           <h1 className="text-5xl text-danger-200 mb-4">Settings</h1>

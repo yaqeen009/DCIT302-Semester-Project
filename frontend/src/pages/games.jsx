@@ -23,9 +23,9 @@ const Games = () => {
         {/* Games Section */}
         <div className="games flex flex-col space-y-8 sm:space-y-4 sm:mb-10">
           {/* Top Games Section */}
-          <div className="flex flex-row sm:flex-wrap justify-between sm:flex-col sm:space-y-4">
+          <div className="flex flex-row  justify-between sm:flex-col sm:space-y-4">
             {/* First Game Card */}
-            <div className="flex flex-col md:flex-row md:space-x-4 lg:space-x-6 justify-between w-full">
+            <div className="flex flex-row md:space-x-4 sm:flex-wrap lg:space-x-6 justify-between w-full">
               <Card
                 coverImg={beach}
                 bgColor={"bg-success-100"}
