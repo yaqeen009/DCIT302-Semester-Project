@@ -32,15 +32,15 @@ const Home = () => {
           
 
           {/* "For Parents" button hidden for tablet */}
-          <div className="-mr-2 sm:hidden font-bold">
+          {/* <div className="-mr-2 sm:hidden font-bold">
             <NavComponent navName={"For Parents"} />
-          </div>
+          </div> */}
         </div>
 
         {/* Games section */}
         <div className="games flex flex-col">
           {/* Top Games and Continue Game Card */}
-          <div className="flex flex-row sm:flex-col space-x-4 space-justify-between">
+          <div className="flex flex-row sm:flex-col space-x-4 justify-between">
             
             {/* Game Cards (Left Column) */}
            
