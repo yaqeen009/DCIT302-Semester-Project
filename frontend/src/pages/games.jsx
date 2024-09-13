@@ -24,7 +24,7 @@ const Games = () => {
           {/* Top Games Section */}
           <div className="flex flex-row sm:flex-wrap justify-between sm:flex-col sm:space-y-4">
             {/* First Game Card */}
-            <div className="flex flex-col md:flex-row md:space-x-4 lg:space-x-6 justify-between w-full">
+            <div className="flex flex-col md:flex-row md:space-x-4 sm:flex-wrap lg:space-x-6 lg:flex-row justify-between w-full">
               <Card
                 coverImg={beach}
                 bgColor={"bg-success-100"}
@@ -141,7 +141,7 @@ const Games = () => {
 
         {/* Bottom Grass Image */}
         <img
-          className="absolute -bottom-12 sm:-bottom-12 left-0 w-full z-10 rotate-180 mt-10"
+          className="absolute -bottom-16 sm:-bottom-12 left-0 w-full z-10 rotate-180 mt-10"
           src={grass}
         />
       </div>
