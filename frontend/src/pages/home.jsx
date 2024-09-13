@@ -32,15 +32,15 @@ const Home = () => {
           
 
           {/* "For Parents" button hidden for tablet */}
-          {/* <div className="-mr-2 sm:hidden font-bold">
+          <div className="-mr-2 md:hidden sm:hidden font-bold">
             <NavComponent navName={"For Parents"} />
-          </div> */}
+          </div>
         </div>
 
         {/* Games section */}
         <div className="games flex flex-col">
           {/* Top Games and Continue Game Card */}
-          <div className="flex flex-row sm:flex-col space-x-4 justify-between">
+          <div className="flex flex-row sm:flex-col space-x-4 sm:space-x-0 justify-between">
             
             {/* Game Cards (Left Column) */}
            
@@ -104,7 +104,7 @@ const Home = () => {
           </div>
           {/* New Games Section */}
           <h1 className="text-body text-primary-400 my-4">New games</h1>
-          <div className="flex flex-row sm:flex-wrap justify-between mb-2">
+          <div className="flex flex-row sm:flex-wrap justify-between mb-10">
             <div className="flex-col">
               <Game
                 bgColor={"bg-primary-400"}
@@ -142,7 +142,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <img className="absolute -bottom-12 sm:-bottom-2 left-0 w-full z-10 rotate-180" src={grass} />
+      <img className="absolute -bottom-12 sm:-bottom-2 left-0 w-full z-10 rotate-180 mt-10" src={grass} />
     </div>
   );
 };
