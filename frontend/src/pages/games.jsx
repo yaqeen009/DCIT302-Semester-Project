@@ -9,7 +9,7 @@ import grass from "../assets/Grass.svg"
 const Games = () => {
   return (
     <div className="relative">
-      <div className="absolute -top-20 left-0 w-full z-10">
+      <div className="absolute -top-20 left-0 w-full z-10 sm:hidden md:-top-16">
         <img src={grass} alt="Grass" className="w-full" />
       </div>
 
@@ -31,7 +31,7 @@ const Games = () => {
                 img={play}
                 secondaryColor={"text-primary-400 border-primary-400"}
                 tertiaryColor={"hover:bg-danger-400"}
-                className="w-full md:w-[48%] lg:w-[30%]"
+                cardWidth={"lg:scale-x-[1.02] lg:ml-2"}
               />
               <Card
                 coverImg={sunset}
@@ -39,12 +39,12 @@ const Games = () => {
                 img={play2}
                 secondaryColor={"text-primary-300 border-primary-200"}
                 tertiaryColor={"hover:bg-secondary-300"}
-                className="w-full md:w-[48%] lg:w-[30%]"
+                cardWidth={"lg:scale-x-[1.02] lg:-ml-2"}
               />
             </div>
           </div>
 
-          <h1 className="text-body text-primary-400 my-4">Top Games</h1>
+          <h1 className="text-body md:text-tablet-body sm:text-mobile-body text-primary-400 my-4">Top Games</h1>
           <div className="flex flex-row flex-wrap justify-between">
             <div className="flex-col">
               <Game
@@ -72,7 +72,7 @@ const Games = () => {
             </div>
           </div>
 
-          <h1 className="text-body text-primary-400 my-4">Recently Played</h1>
+          <h1 className="text-body md:text-tablet-body sm:text-mobile-body text-primary-400 my-4">Recently Played</h1>
           <div className="flex flex-row flex-wrap justify-between">
             <div className="flex-col">
               <Game
@@ -100,8 +100,8 @@ const Games = () => {
             </div>
           </div>
 
-          <h1 className="text-body text-primary-400 my-4">New games</h1>
-          <div className="flex flex-row flex-wrap mx-2 justify-between mb-10">
+          <h1 className="text-body md:text-tablet-body sm:text-mobile-body text-primary-400 my-4">New games</h1>
+          <div className="flex flex-row flex-wrap justify-between mb-10">
             <div className="flex-col">
               <Game
                 bgColor={"bg-primary-400"}
@@ -141,7 +141,7 @@ const Games = () => {
 
         {/* Bottom Grass Image */}
         <img
-          className="absolute -bottom-16 sm:-bottom-12 left-0 w-full z-10 rotate-180 mt-10"
+          className="absolute -bottom-20 md:-bottom-16 sm:-bottom-12 left-0 w-full z-10 rotate-180 mt-10"
           src={grass}
         />
       </div>

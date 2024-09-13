@@ -1,7 +1,7 @@
 
-const Card = ({coverImg,bgColor,img, secondaryColor,tertiaryColor}) => {
+const Card = ({coverImg,bgColor,img, secondaryColor,tertiaryColor, cardWidth}) => {
   return (
-    <div className={`${bgColor} w-fit h-fit rounded-md flex flex-col pb-3 shadow-md sm:my-2  md:w-[42vw] md:h-[30vh] lg:scale-x-[1.02] lg:mr-2`}>
+    <div className={`${bgColor} w-fit h-fit rounded-md flex flex-col pb-3 shadow-md sm:my-2  md:w-[42vw] md:h-[30vh] ${cardWidth}`}>
       <img src={coverImg} className="h-full w-full"/>
       <div className="mx-4 flex flex-row justify-between items-center">
         <h1 className={`${secondaryColor} text-headline`}>Continue game</h1>

@@ -72,6 +72,7 @@ const Home = () => {
                 img={play}
                 secondaryColor={"text-primary-400 border-primary-400"}
                 tertiaryColor={"hover:bg-danger-400"}
+                cardWidth={"lg:scale-x-[1.02] lg:mr-2"}
               />
             </div>
           </div>
