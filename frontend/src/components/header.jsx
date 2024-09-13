@@ -5,6 +5,7 @@ import home from "../assets/home.svg";
 import games from "../assets/games.svg";
 import rewards from "../assets/rewards.svg";
 import settings from "../assets/settings.svg";
+import settings2 from "../assets/settings2.svg"
 import notiOff from "../assets/noti-off.svg";
 import avatar from "../assets/avatar.png";
 import menuIcon from "../assets/menu.svg"; 
@@ -69,9 +70,9 @@ const Header = () => {
             <NavComponent icon={home} navName={"Home"} path={"/home"} text={"primary-400"}/>
             <NavComponent icon={games} navName={"Games"} path={"/games"} text={"primary-400"}/>
             <NavComponent icon={rewards} navName={"Rewards"} path={"/rewards"} text={"primary-400"}/>
-            <NavComponent icon={settings} navName={"Settings"} path={"/settings"} text={"primary-400"}/>
+            <NavComponent icon={settings2} navName={"Settings"} path={"/settings"} text={"primary-400"}/>
           </nav>
-          <div className="mt-auto mb-4 text-center text-tertiary-400">
+          <div className="mt-48 mb-4 text-center text-tertiary-400">
             <p>safeplaylearn.org ©2024</p>
           </div>
         </div>
