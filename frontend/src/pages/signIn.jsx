@@ -21,7 +21,7 @@ const SignIn = () => {
     <div className="login font-comic bg-secondary-200 overflow-auto">
       <div className="flex flex-col xl:flex-row h-[100vh] xl:mx-[10vw] xl:items-center">
         {/* Info section */}
-        <div className="info flex flex-col md:flex-row xl:flex-col px-8 items-center bg-secondary-100 xl:bg-secondary-200 xl:h-fit h-[55vh] w-full xl:w-[1024px]">
+        <div className="info flex flex-col md:flex-row xl:flex-col px-8 items-center bg-secondary-100 xl:bg-secondary-200 xl:h-fit h-[60vh] w-full xl:w-[1024px]">
           <div className="mb-4 md:mr-5 text-center xl:text-start">
             <h1 className="text-primary-400 text-mobile-display md:text-tablet-display xl:text-display">
               SafePlay <span className="text-primary-100">Learn</span>
