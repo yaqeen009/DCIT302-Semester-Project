@@ -1,4 +1,4 @@
-const Button = ({btnName, btnFunction, btnType, btnColor, btnHoverColor, btntxtColor}) => {
+const ButtonComp = ({btnName, btnFunction, btnType, btnColor, btnHoverColor, btntxtColor}) => {
     return ( 
         <div className={`font-roboto bg-${btnColor} text-mobile-label md:text-tablet-label xl:text-label w-fit m-5 p-2 rounded-lg text-${btntxtColor} shadow-1dp hover:${btnHoverColor}`}>
             <button type={btnType} onClick={btnFunction}>{btnName}</button>
@@ -6,4 +6,4 @@ const Button = ({btnName, btnFunction, btnType, btnColor, btnHoverColor, btntxtC
      );
 }
  
-export default Button;
+export default ButtonComp;

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Button from "./button";
+import ButtonComp from "./button";
 
 const Login = ({ toggle, isOpen }) => {
   const nav = useNavigate();
@@ -26,7 +26,13 @@ const Login = ({ toggle, isOpen }) => {
               className="xl:placeholder:text-label md:placeholder:text-tablet-label placeholder:text-mobile-label xl:w-[456px] md:w-[330px] w-[220px] xl:h-16 md:h-8 h-4 py-5 md:py-6 xl:py-8 pl-4 rounded-lg md:my-4 xl:my-4 my-2"
               required
             />
-            <Button btnName={"Login"} btnType={"submit"} />
+            <ButtonComp
+              btnName={"Log in"}
+              btnType={"submit"}
+              btnColor={"secondary-400"}
+              btntxtColor={"tertiary-400"}
+              btnHoverColor={"primary-400"}
+            />
             <p className="text-tertiary-300 xl:text-label md:text-tablet-label text-mobile-label ">
               Don't have an account?{" "}
               <button onClick={toggle} className="text-primary-400 xl:text-label md:text-tablet-label text-mobile-label">
