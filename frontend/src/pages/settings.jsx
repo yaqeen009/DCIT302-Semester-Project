@@ -2,8 +2,13 @@ import avatar from "../assets/avatar.png";
 import React from "react";
 import NavComponent from "../components/navComp";
 import ButtonComp from "../components/button";
+import { useNavigate } from "react-router-dom";
 
 const Settings = () => {
+  const navigate = useNavigate()
+  const onLogOut = () => {
+    navigate('/')
+  }
   return (
     <div className="settings font-comic z-0 flex flex-col md:flex-row bg-secondary-200">
       {/* For mobile view, headings on top */}
@@ -17,10 +22,10 @@ const Settings = () => {
         </h2>
       </div>
 
-      <div className="relative w-full md:w-[400px] sm:w-[90vw] sm:h-fit sm:flex sm:self-center sm:rounded-lg sm:drop-shadow-none sm:shadow-none h-auto md:h-screen bg-secondary-300 drop-shadow-2xl shadow-md flex-shrink-0">
+      <div className="relative w-full md:w-[400px] sm:w-[90vw] sm:flex sm:self-center sm:justify-around sm:rounded-lg sm:drop-shadow-none sm:shadow-none h-auto sm:h-fit md:h-screen bg-secondary-300 drop-shadow-2xl shadow-md flex-shrink-0">
         <div className="flex flex-col items-center p-4 h-full">
-          <div className="avatar flex flex-col sm:flex-row sm:justify-items-end space-y-4 items-center md:items-left my-8 ">
-            <div className="flex flex-col justify-between">
+          <div className="avatar flex flex-col sm:flex-row sm:basis-1/2 space-y-4 items-center md:items-left my-8 ">
+            <div className="flex flex-col sm:pr-[20vw]">
               <img
                 src={avatar}
                 alt="Avatar"
@@ -31,11 +36,12 @@ const Settings = () => {
                   btnName={"Sign Out"}
                   btnColor={"danger-100"}
                   btntxtColor={"danger-400"}
+                  btnFunction={onLogOut}
                 />
               </div>
             </div>
 
-            <div className="sm:">
+            <div className="sm:pl-[5vw] sm:space-y-2">
               <h1 className="mt-2 font-bold sm:font-normal text-title sm:text-mobile-title text-primary-400 text-center sm:text-end md:text-left">
                 Julie Jackson
               </h1>
@@ -59,7 +65,7 @@ const Settings = () => {
         </div>
       </div>
 
-      <div className="flex-1 bg-white p-4 md:p-8">
+      <div className="flex-1 p-4 md:p-8">
         {/* For desktop view, headings inside the content area */}
         <div className="hidden md:block space-y-8">
           <h1 className="text-5xl text-danger-200 mb-4">Settings</h1>
