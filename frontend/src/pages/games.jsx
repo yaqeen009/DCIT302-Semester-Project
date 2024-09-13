@@ -102,7 +102,7 @@ const Games = () => {
           </div>
 
           {/* New Games Section */}
-          <h1 className="text-body text-primary-400 my-4">New games</h1>
+          <h1 className="text-body text-primary-400 my-4 mb-10">New games</h1>
           <div className="flex flex-row sm:flex-wrap justify-between mb-10 sm:space-y-4">
             <div className="flex-col space-y-4">
               <Game

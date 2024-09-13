@@ -9,7 +9,7 @@ const Rewards = () => {
         <img src={grass} alt="Grass" className="w-full" />
       </div>
       <div className="rewards font-comic mt-10 mx-10 sm:mx-4 sm:my-0 z-0">
-        <h1 className="text-primary-300 text-headline">All Games</h1>
+        <h1 className="text-primary-300 text-headline font-bold">Rewards</h1>
         <div className="flex flex-col">
           <section className="achievement-box mb-8">
             <h1 className="text-primary-400 text-body">Achievements</h1>
