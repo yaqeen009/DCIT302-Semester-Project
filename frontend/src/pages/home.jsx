@@ -19,33 +19,33 @@ const Home = () => {
       <div className="home font-comic mt-10 mx-10 sm:mt-0 sm:mx-4 z-0">
         <div className="flex flex-row items-center justify-between">
           {/* Welcome text with the girl image */}
+          <div>
           <div className="flex flex-row items-center">
             <h1 className="text-primary-300 text-headline sm:text-mobile-headline font-bold">
               Welcome back, <span className="text-primary-400">Julie</span>
             </h1>
             <img src={girl} className="scale-75" />
           </div>
+          
+          <h1 className="text-body text-primary-400 mb-2">Top Games</h1>
+          </div>
+          
 
           {/* "For Parents" button hidden for tablet */}
-          <div className="-mr-2 sm:hidden font-bold">
-            <NavComponent navName={"For Parents"}  color={"primary-200"} text={"primary-400"} hovered={"primary-300"}/>
-          </div>
+          {/* <div className="-mr-2 sm:hidden font-bold">
+            <NavComponent navName={"For Parents"} />
+          </div> */}
         </div>
 
         {/* Games section */}
         <div className="games flex flex-col">
           {/* Top Games and Continue Game Card */}
-          <div className="flex flex-row sm:flex-col justify-between">
-            {/* Continue Game Card (Right Column) */}
-            <Card
-              coverImg={beach}
-              bgColor={"bg-[#46D7FA]"}
-              img={play}
-              secondaryColor={"text-[#F4538A] border-[#F4538A]"}
-              tertiaryColor={"hover:bg-[#F1D9DB]"}
-            />
+          <div className="flex flex-row sm:flex-col space-x-4 justify-between">
+            
             {/* Game Cards (Left Column) */}
+           
             <div className="flex-col">
+        
               <Game
                 bgColor={"bg-primary-300"}
                 gameName={"Addition"}
@@ -62,7 +62,15 @@ const Home = () => {
                 category={"Math"}
               />
             </div>
-
+            {/* Continue Game Card (Right Column) */}
+            <Card
+                coverImg={beach}
+                bgColor={"bg-success-100"}
+                img={play}
+                secondaryColor={"text-primary-400 border-primary-400"}
+                tertiaryColor={"hover:bg-danger-400"}
+                className="w-full md:w-[45%] lg:w-[30%] "
+              />
             
           </div>
 
