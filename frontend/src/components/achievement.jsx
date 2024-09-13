@@ -15,7 +15,7 @@ const Achievement = () => {
           </div>
         </div>
         <div className="w-[10%] sm:w-[25%] h-full bg-success-200 rounded-r-lg flex items-center">
-            <h1 className="text-headline sm:text-mobile-headline text-center mx-6 text-secondary-200">Claim</h1>
+            <h1 className="text-headline sm:text-mobile-headline text-center md:text-mobile-headline  mx-4 text-secondary-200">Claim</h1>
         </div>
       </div>
     </div>
