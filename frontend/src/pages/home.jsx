@@ -33,7 +33,7 @@ const Home = () => {
 
           {/* "For Parents" button hidden for tablet */}
           <div className="-mr-2 md:hidden sm:hidden font-bold">
-            <NavComponent navName={"For Parents"} />
+            <NavComponent navName={"For Parents"} color={"primary-200"} text={"primary-400"} hovered={"primary-300"}/>
           </div>
         </div>
 

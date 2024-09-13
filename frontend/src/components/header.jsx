@@ -31,9 +31,9 @@ const Header = () => {
           <img src={logo} alt="Logo" className="h-full sm:h-16" />
         </div>
         <nav className="flex flex-row items-center sm:hidden">
-            <NavComponent icon={home} navName={"Home"} path={"/home"} text={"primary-400"} color={"primary-200"} hovered={"primary-300"} hoveredClicked={"success-200"} clicked={"success-100"}/>
-            <NavComponent icon={games} navName={"Games"} path={"/games"} text={"primary-400"} color={"primary-200"} hovered={"primary-300"} hoveredClicked={"success-200"} clicked={"success-100"}/>
-            <NavComponent icon={rewards} navName={"Rewards"} path={"/rewards"} text={"primary-400"} color={"primary-200"} hovered={"primary-300"} hoveredClicked={"success-200"} clicked={"success-100"}/>
+            <NavComponent icon={home} navName={"Home"} path={"/home"} text={"primary-400"} color={"primary-200"} hovered={"bg-primary-300"} hoveredClicked={"bg-success-200"} clicked={"success-100"}/>
+            <NavComponent icon={games} navName={"Games"} path={"/games"} text={"primary-400"} color={"primary-200"} hovered={"bg-primary-300"} hoveredClicked={"bg-success-200"} clicked={"success-100"}/>
+            <NavComponent icon={rewards} navName={"Rewards"} path={"/rewards"} text={"primary-400"} color={"primary-200"} hovered={"bg-primary-300"} hoveredClicked={"bg-success-200"} clicked={"success-100"}/>
           </nav>
 
         {/* User Icons */}
@@ -65,7 +65,7 @@ const Header = () => {
           <button onClick={toggleDrawer} className="m-4">
             <img src={closeIcon} alt="Close" className="h-8 w-8" />
           </button>
-          <nav className="sm:flex flex-col items-center space-y-6 mt-8 text-white hidden">
+          <nav className="sm:flex flex-col items-center space-y-6 mt-8 hidden">
             <NavComponent icon={home} navName={"Home"} path={"/home"} text={"primary-400"}/>
             <NavComponent icon={games} navName={"Games"} path={"/games"} text={"primary-400"}/>
             <NavComponent icon={rewards} navName={"Rewards"} path={"/rewards"} text={"primary-400"}/>

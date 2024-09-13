@@ -19,8 +19,8 @@ const NavComponent = ({ icon, navName, path, color, text, clicked, hovered, hove
       <div
         className={`p-4 font-comic xl:text-body md:text-tablet-body text-mobile-headline m-2 h-fit rounded-lg text-${text} inline-flex align-middle cursor-pointer ${
           isClicked
-            ? `bg-${clicked} hover:bg-${hoveredClicked}`
-            : `bg-${color} hover:bg-${hovered}`
+            ? `bg-${clicked} hover:${hoveredClicked}`
+            : `bg-${color} hover:${hovered}`
         }`}
         onClick={handleClick}
       >
