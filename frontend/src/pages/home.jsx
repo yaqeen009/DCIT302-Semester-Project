@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="relative">
       {/* Grass Image for background */}
-      <div className="absolute -top-20 left-0 w-full z-10 sm:hidden">
+      <div className="absolute -top-20 left-0 w-full z-10 sm:hidden md:-top-16">
         <img src={grass} alt="Grass" className="w-full" />
       </div>
 
@@ -20,20 +20,24 @@ const Home = () => {
         <div className="flex flex-row items-center justify-between">
           {/* Welcome text with the girl image */}
           <div>
-          <div className="flex flex-row items-center">
-            <h1 className="text-primary-300 text-headline sm:text-mobile-headline font-bold">
-              Welcome back, <span className="text-primary-400">Julie</span>
-            </h1>
-            <img src={girl} className="scale-75" />
+            <div className="flex flex-row items-center">
+              <h1 className="text-primary-300 text-headline sm:text-mobile-headline font-bold">
+                Welcome back, <span className="text-primary-400">Julie</span>
+              </h1>
+              <img src={girl} className="scale-75" />
+            </div>
+
+            <h1 className="text-body text-primary-400 mb-2">Top Games</h1>
           </div>
-          
-          <h1 className="text-body text-primary-400 mb-2">Top Games</h1>
-          </div>
-          
 
           {/* "For Parents" button hidden for tablet */}
           <div className="-mr-2 md:hidden sm:hidden font-bold">
-            <NavComponent navName={"For Parents"} color={"primary-200"} text={"primary-400"} hovered={"primary-300"}/>
+            <NavComponent
+              navName={"For Parents"}
+              color={"primary-200"}
+              text={"primary-400"}
+              hovered={"primary-300"}
+            />
           </div>
         </div>
 
@@ -41,11 +45,9 @@ const Home = () => {
         <div className="games flex flex-col">
           {/* Top Games and Continue Game Card */}
           <div className="flex flex-row sm:flex-col space-x-4 sm:space-x-0 justify-between">
-            
             {/* Game Cards (Left Column) */}
-           
-            <div className="flex-col">
-        
+
+            <div className="flex-col lg:space-y-8">
               <Game
                 bgColor={"bg-primary-300"}
                 gameName={"Addition"}
@@ -63,15 +65,15 @@ const Home = () => {
               />
             </div>
             {/* Continue Game Card (Right Column) */}
-            <Card
+            <div className="">
+              <Card
                 coverImg={beach}
                 bgColor={"bg-success-100"}
                 img={play}
                 secondaryColor={"text-primary-400 border-primary-400"}
                 tertiaryColor={"hover:bg-danger-400"}
-                className="w-full md:w-[45%] lg:w-[30%] "
               />
-            
+            </div>
           </div>
 
           {/* Recently Played Section */}
@@ -142,7 +144,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <img className="absolute -bottom-12 sm:-bottom-2 left-0 w-full z-10 rotate-180 mt-10" src={grass} />
+      <img
+        className="absolute -bottom-12 sm:-bottom-2 md:-bottom-5 left-0 w-full z-10 rotate-180 mt-10"
+        src={grass}
+      />
     </div>
   );
 };
