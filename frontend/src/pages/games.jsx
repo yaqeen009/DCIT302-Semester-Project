@@ -145,7 +145,7 @@ const Games = () => {
 
         {/* Bottom Grass Image */}
         <img
-          className="absolute -bottom-12 sm:-bottom-12 left-0 w-full z-10 rotate-180 mt-10"
+          className="absolute -bottom-20 sm:-bottom-12 left-0 w-full z-10 rotate-180 mt-10"
           src={grass}
         />
       </div>
