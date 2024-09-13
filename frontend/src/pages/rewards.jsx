@@ -33,7 +33,7 @@ const Rewards = () => {
             </div>
           </section>
         </div>
-        <img className="absolute -bottom-12 sm:-bottom-2 left-0 w-full z-10 rotate-180" src={grass} />
+        <img className="absolute -bottom-12 sm:-bottom-2 left-0 w-full z-10 rotate-180 mt-10" src={grass} />
       </div>
     </div>
   );

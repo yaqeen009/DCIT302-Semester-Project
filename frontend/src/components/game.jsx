@@ -4,7 +4,7 @@ import play from "../assets/play.svg";
 const Game = ({ gameName, bgColor, category }) => {
   return (
     <div
-      className={`game relative w-[562px] max-w-[90vw] h-[128px] sm:w-[400px] md:w-[450px] lg:w-[500px] ${bgColor} overflow-clip rounded-lg py-8 mb-7 shadow-md`}
+      className={`game relative w-[562px] max-w-[90vw] h-[128px] sm:w-[400px] sm:h-[15vh] md:w-[450px] lg:w-[500px] ${bgColor} overflow-clip rounded-lg py-8 mb-4 shadow-md`}
     >
       <div className="px-8">
         <div className="flex flex-row items-center">
@@ -15,7 +15,7 @@ const Game = ({ gameName, bgColor, category }) => {
         </div>
         <p className="absolute bottom-4 text-body sm:text-mobile-body text-tertiary-400">{category}</p>
       </div>
-      <img className="absolute -mt-6 right-0 sm:scale-90" src={park} />
+      <img className="absolute -mt-6 sm:-mt-8 right-0 sm:scale-110" src={park} />
     </div>
   );
 };
